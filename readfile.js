@@ -1,5 +1,5 @@
-var fs = require('fs');
-var http= require('http');
+let fs = require('fs');
+let http= require('http');
 http.createServer(function (request,response){
     fs.readFile('1.html',function (err,data){
         response.writeHead(200,{'Content-Type':'text/html'});

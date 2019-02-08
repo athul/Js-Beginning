@@ -1,9 +1,9 @@
-var url= require('url');
-var http=require('http');
-var fs=require('fs');
+let url= require('url');
+let http=require('http');
+let fs=require('fs');
 http.createServer(function (req,res){
-    var q=url.parse(req.url,true);
-    var filename="."+q.pathname;
+    let q=url.parse(req.url,true);
+    let filename="."+q.pathname;
     fs.readFile(filename,function (err,data){
         if (err){
             res.writeHead(404,{'Content-Type':'text/html'});
