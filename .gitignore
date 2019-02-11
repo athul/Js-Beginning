@@ -1,2 +1,3 @@
 *.vscode
 *.directory
+node_codeship/node_modules/
