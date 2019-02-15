@@ -1,3 +1,7 @@
 *.vscode
 *.directory
 node_codeship/node_modules/
+
+node_codeship/
+
+locallib/node_modules/
